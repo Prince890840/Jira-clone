@@ -52,6 +52,12 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "Charlie_Text-Regular";
+  src: url(/assets/fonts/Charlie-Text/Charlie_Text-Regular.woff)
+    format("truetype");
+}
+
 :root {
   /* colors */
   --background-color: #fff;
@@ -101,46 +107,6 @@ header {
   padding-bottom: 0;
 }
 
-.select-wrapper select {
-  -webkit-appearance: none;
-  padding-right: 10px;
-  -moz-appearance: none;
-  appearance: none;
-  background-color: #f4f5f7;
-  border: none;
-  text-decoration: none;
-  color: #42525e;
-  font-family: "Charlie_Text-Semibold";
-  font-size: 0.875rem;
-  line-height: 1.125;
-}
-
-.select-wrapper select:focus {
-  outline: none;
-  border-color: #0070f3;
-}
-
-.select-wrapper::after {
-  border-color: gray transparent;
-  border-style: solid;
-  border-width: 0.4em 0.4em 0;
-  content: "";
-  margin-left: 0.3em;
-  position: relative;
-  top: 12px;
-  right: 15px;
-  transform: translateY(-50%);
-}
-
-/* .select-wrapper:hover {
-  background-color: #61dafb;
-  color: white;
-} */
-
-.select-wrapper select:focus + ::after {
-  border-color: #0070f3 transparent;
-}
-
 nav {
   padding-top: 0;
   padding-bottom: 0;
@@ -148,6 +114,7 @@ nav {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   min-height: 60px;
@@ -751,7 +718,7 @@ footer .footer__title {
   padding-left: 0;
   font-weight: 400;
   margin-bottom: 0;
-  font-family: "Charlie_Text-Semibold";
+  font-family: "Charlie_Text-Regular";
 }
 
 footer .footer__item {
@@ -801,15 +768,21 @@ footer .footer__bottom ul {
   flex-wrap: wrap;
   align-items: center;
   position: relative;
+  margin-left: 25px;
+}
+
+footer .footer__bottom ul li {
+  padding: 10px 0;
 }
 
 footer .footer__bottom ul li a {
   text-decoration: none;
   color: #42525e;
-  font-family: "Charlie_Text-Semibold";
+  font-family: "Charlie_Text-Regular";
   margin-right: 30px;
   font-size: 0.875rem;
   line-height: 1.125;
+  font-size: 14px;
 }
 
 footer .footer__bottom ul:first-child li::before {
@@ -819,7 +792,7 @@ footer .footer__bottom ul:first-child li::before {
   height: 20px;
   width: 20px;
   position: absolute;
-  left: -26px;
+  left: -24px;
   top: 50%;
   transform: translateY(-50%);
   text-decoration: none;
@@ -854,6 +827,33 @@ footer .tab-footer-head {
   display: none;
 }
 
+.select-wrapper select {
+  cursor: pointer;
+  border: none;
+  background: #f4f5f7;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  color: #42526e;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-family: "Charlie_Text-Regular";
+}
+
+.select-wrapper::after {
+  border-bottom: none;
+  border-left: 4px solid rgba(0, 0, 0, 0);
+  border-right: 4px solid rgba(0, 0, 0, 0);
+  border-top: 6px solid #42526e;
+  content: "";
+  position: absolute;
+  top: 46%;
+}
+
+footer .footer__bottom ul:first-child .first-item {
+  margin-right: 30px;
+}
+
 @media screen and (max-width: 500px) {
   nav {
     padding: 0 16px;
@@ -886,6 +886,7 @@ footer .tab-footer-head {
   .hero-section .TwoColumns .first h1 {
     font-size: 32px;
     margin: 0 0 14px;
+    padding-right: 0;
   }
 
   .hero-section .TwoColumns .first .component h5 {
@@ -1115,18 +1116,34 @@ footer .tab-footer-head {
     left: 0px;
     top: 6%;
   }
+
+  footer .footer__bottom ul li {
+    padding: 0;
+  }
+
+  .select-wrapper::after {
+    top: 6%;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 960px) {
-  nav {
-    padding: 0 16px;
-  }
+@media screen and (min-width: 480px) and (max-width: 800px) {
 
   .hero-section .TwoColumns {
     grid-template-areas:
       "first"
       "last";
     grid-template-columns: 1fr;
+  }
+
+  /* .hero-section .TwoColumns {
+    grid-template-columns: 1fr 1fr;
+    margin-right: 40px;
+  } */
+
+  .hero-section .TwoColumns .first h1 {
+    font-size: 44px;
+    margin: 0 0 16px;
+    padding-right: 50px;
   }
 
   .hero-section .TwoColumns .first,
@@ -1144,12 +1161,6 @@ footer .tab-footer-head {
 
   .hero-section .dev-section {
     padding: 32px 0 16px 0;
-  }
-
-  .hero-section .TwoColumns .first h1 {
-    font-size: 44px;
-    margin: 0 0 14px;
-    padding-right: 120px;
   }
 
   .hero-section .TwoColumns .first .component h5 {
@@ -1174,8 +1185,8 @@ footer .tab-footer-head {
   }
 
   .hero-section .TwoColumns .last .form {
-    max-width: 327px;
-    max-height: 420px;
+    max-width: 80%;
+    max-height: 80%;
     margin: 0 auto;
   }
 
@@ -1214,12 +1225,12 @@ footer .tab-footer-head {
     padding: 64px 0 16px 0;
   }
 
-  .next-gen-board .TwoColumns {
+  /* .next-gen-board .TwoColumns {
     grid-template-areas:
       "first"
       "last";
     grid-template-columns: 1fr;
-  }
+  } */
 
   .next-gen-board .TwoColumns .column {
     padding: 16px;
@@ -1243,12 +1254,12 @@ footer .tab-footer-head {
     margin-left: 0;
   }
 
-  .track-section .TwoColumns {
+  /* .track-section .TwoColumns {
     grid-template-areas:
       "first"
       "last";
     grid-template-columns: 1fr;
-  }
+  } */
 
   .track-section {
     padding: 32px 0;
@@ -1279,12 +1290,12 @@ footer .tab-footer-head {
     margin-left: 0;
   }
 
-  .spreadsheets-section .TwoColumns {
+  /* .spreadsheets-section .TwoColumns {
     grid-template-areas:
       "first"
       "last";
     grid-template-columns: 1fr;
-  }
+  } */
 
   .spreadsheets-section {
     padding: 16px 0 64px;
@@ -1354,16 +1365,28 @@ footer .tab-footer-head {
     max-width: 207px;
     max-height: 64px;
   }
+
+  footer .footer__bottom .image-section {
+    margin: 0 0 0 auto;
+  }
 }
 
-@media screen and (min-width: 960px) and (max-width: 1100px) {
+@media screen and (min-width: 800px) and (max-width: 1020px) {
   nav {
     padding: 0 16px;
   }
 
-  .hero-section .TwoColumns .first,
+  .hero-section .TwoColumns .first {
+    margin-left: 0;
+  }
+
   .hero-section .TwoColumns .last {
-    margin-left: 91.656px;
+    margin-left: 0;
+  }
+
+  .next-gen-board .TwoColumns .first,
+  .next-gen-board .TwoColumns .last {
+    margin-left: 0px;
   }
 
   .hero-section .TwoColumns .column {
@@ -1372,5 +1395,24 @@ footer .tab-footer-head {
 
   .fugro-section .component .main-content {
     padding: 0;
+  }
+
+  .track-section .TwoColumns .first {
+    margin-right: 0px;
+  }
+
+  .track-section .TwoColumns .last {
+    margin-left: 0px;
+  }
+
+  .spreadsheets-section .TwoColumns .first,
+  .spreadsheets-section .TwoColumns .last {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  nav {
+    padding: 0 16px;
   }
 }
