@@ -228,7 +228,7 @@ section .TwoColumns .last {
   background-color: var(--background-color);
   border-radius: 5px;
   box-shadow: rgb(9 30 66 / 15%) 0px 4px 6px;
-  max-width: 74%;
+  max-width: 84%;
   min-height: 100%;
   padding: 32px 0px;
 }
@@ -272,9 +272,8 @@ section .TwoColumns .last {
 .hero-section .TwoColumns .last .box-content .form-main-content {
   font-size: 36px;
   line-height: 40px;
-  font-family: var(--charlie-display-font-family);
+  font-family: "Charlie_Text-Semibold";
   margin: 0px;
-  font-weight: 500;
   word-break: break-all;
 }
 
@@ -329,7 +328,6 @@ section .TwoColumns .last {
   cursor: pointer;
   font-weight: 500;
   background-color: #e8e9ee;
-  margin: 0px 0px 20px;
   padding: 0px;
   border: 0px;
   font-size: 100%;
@@ -376,10 +374,15 @@ section .TwoColumns .last {
   margin-left: 8px;
 }
 
-.box-content .last-section img {
-  width: 150px;
-  height: 80px;
-  margin-top: -35px;
+.box-content .last-section {
+  height: 100%;
+  width: 100%;
+}
+
+.box-content .last-section svg {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 16px;
 }
 
 .box-content .middle-section .or-division .social-signup-button {
@@ -438,6 +441,7 @@ span {
   font-size: 36px;
   text-align: center;
   margin: 0 0 24px;
+  font-family: "Charlie_Display-Regular";
 }
 
 .features p {
