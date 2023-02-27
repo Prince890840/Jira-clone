@@ -539,9 +539,10 @@ span {
 .next-gen-board .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Regular";
-  font-weight: 500;
+  font-family: "Charlie_Text-Thin";
+  font-weight: 600;
   color: #42526e;
+  line-height: 24px;
 }
 
 .next-gen-board .last .board-component {
@@ -584,8 +585,9 @@ span {
 .track-section .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Regular";
-  font-weight: 500;
+  font-family: "Charlie_Text-Thin";
+  font-weight: 600;
+  line-height: 24px;
   color: #42526e;
 }
 
@@ -622,8 +624,9 @@ span {
 .spreadsheets-section .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Regular";
-  font-weight: 500;
+  font-family: "Charlie_Text-Thin";
+  font-weight: 600;
+  line-height: 24px;
   color: #42526e;
 }
 
@@ -665,8 +668,8 @@ h2 {
   display: grid;
   place-items: center;
   cursor: pointer;
-  max-width: 688px;
-  max-height: 40px;
+  max-width: 43em;
+  height: auto;
   margin: 0 auto;
 }
 
@@ -1654,6 +1657,10 @@ footer .footer__bottom ul:first-child .first-item {
   .spreadsheets-section .TwoColumns .first,
   .spreadsheets-section .TwoColumns .last {
     margin-left: 0px;
+  }
+
+  .record-section .record-btn {
+    max-width: unset;
   }
 
   footer .footer-head-section-logo {
