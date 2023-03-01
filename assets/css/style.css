@@ -21,52 +21,52 @@
 
 @font-face {
   font-family: "Charlie_Display-Regular";
-  src: url(/assets/fonts/Charlie-Display/Charlie_Display-Regular.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Display/Charlie_Display-Regular.woff)
     format("truetype");
 }
 
 @font-face {
   font-family: "Charlie_Display-Bold";
-  src: url(/assets/fonts/Charlie-Display/Charlie_Display-Bold.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Display/Charlie_Display-Bold.woff)
     format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Charlie_Display-Semibold";
-  src: url(/assets/fonts/Charlie-Display/Charlie_Display-Semibold.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Display/Charlie_Display-Semibold.woff)
     format("truetype");
   font-weight: 600;
 }
 
 @font-face {
   font-family: "Charlie_Text-Semibold";
-  src: url(/assets/fonts/Charlie-Text/Charlie_Text-Semibold.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Text/Charlie_Text-Semibold.woff)
     format("truetype");
   font-weight: 500;
 }
 
 @font-face {
   font-family: "Charlie_Text-Thin";
-  src: url(/assets/fonts/Charlie-Text/Charlie_Text-Thin.woff) format("truetype");
+  src: url(/Jira-clone/assets/fonts/Charlie-Text/Charlie_Text-Thin.woff) format("truetype");
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Charlie_Text-Regular";
-  src: url(/assets/fonts/Charlie-Text/Charlie_Text-Regular.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Text/Charlie_Text-Regular.woff)
     format("truetype");
 }
 
 @font-face {
   font-family: "Charlie_Text-Light";
-  src: url(/assets/fonts/Charlie-Text/Charlie_Text-Light.woff)
+  src: url(/Jira-clone/assets/fonts/Charlie-Text/Charlie_Text-Light.woff)
     format("truetype");
 }
 
 @font-face {
   font-family: "CharlieDisplay-Black";
-  src: url(/assets/fonts/Charlie-Display/CharlieDisplay-Black.otf)
+  src: url(/Jira-clone/assets/fonts/Charlie-Display/CharlieDisplay-Black.otf)
     format("truetype");
 }
 
@@ -173,7 +173,7 @@ section {
 .hero-section {
   height: auto;
   width: 100%;
-  background-image: url(/assets/images/Hero-IMG-2x.png);
+  background-image: url(/Jira-clone/assets/images/Hero-IMG-2x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -653,7 +653,7 @@ h2 {
 }
 
 .record-section {
-  background-image: url(/assets/images/Hero-IMG-2x.png);
+  background-image: url(/Jira-clone/assets/images/Hero-IMG-2x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -857,7 +857,7 @@ footer .footer__bottom ul li a:hover {
 }
 
 footer .footer__bottom ul:first-child li::before {
-  background: url(/assets/images/globe.svg) left center no-repeat;
+  background: url(/Jira-clone/assets/images/globe.svg) left center no-repeat;
   background-size: 20px;
   content: "";
   height: 20px;
