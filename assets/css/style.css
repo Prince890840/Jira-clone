@@ -1,23 +1,6 @@
-@import url(//db.onlinewebfonts.com/c/f9e6ca544526a9029d1e37bff0c6e667?family=Charlie+Text+Thin);
-
 /*-----------------------------------*\
  * #CUSTOM PROPERTY
 \*-----------------------------------*/
-
-@font-face {
-  font-family: "Charlie Text Thin";
-  src: url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.eot");
-  src: url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/f9e6ca544526a9029d1e37bff0c6e667.svg#Charlie Text Thin")
-      format("svg");
-}
 
 @font-face {
   font-family: "Charlie_Display-Regular";
@@ -122,6 +105,11 @@ header {
   margin: 0 auto;
 }
 
+.section-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -152,8 +140,7 @@ nav ul li .btn {
   margin-bottom: 0;
   border: 1px solid #0053cc;
   border-radius: 4px;
-  font-weight: 600;
-  font-family: "Charlie Text Thin";
+  font-family: "Charlie_Text-Semibold";
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -262,12 +249,7 @@ section .TwoColumns .last {
 }
 
 .hero-section .TwoColumns .last .box-content {
-  display: flex;
-  flex-direction: column;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: start;
-  justify-content: flex-start;
+  text-align: center;
   color: #091e42;
   padding: 0px 16px;
 }
@@ -293,51 +275,27 @@ section .TwoColumns .last {
   width: 100%;
 }
 
-.box-content .middle-section .sec {
-  text-decoration: none;
+.general__sec {
   height: 39px;
   width: 100%;
   border-radius: 3px;
   display: flex;
-  -webkit-box-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
   align-items: center;
-  color: rgb(66, 82, 110);
   cursor: pointer;
   font-weight: 500;
-  background-color: rgb(255, 255, 255);
-  margin: 0px 0px 20px;
-  padding: 0px;
-  border: 0px;
-  font-size: 100%;
-  vertical-align: baseline;
+  color: rgb(66, 82, 110);
   font-family: var(--external-font-family);
-  font-style: normal;
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0px !important;
 }
 
+.box-content .middle-section .sec {
+  background-color: rgb(255, 255, 255);
+  margin: 0px 0px 20px;
+}
+
 .box-content .middle-section .social-sec {
-  text-decoration: none;
-  height: 39px;
-  width: 100%;
-  border-radius: 3px;
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  color: rgb(66, 82, 110);
-  cursor: pointer;
-  font-weight: 500;
   background-color: #e8e9ee;
-  padding: 0px;
-  border: 0px;
-  font-size: 100%;
-  vertical-align: baseline;
-  font-family: var(--external-font-family);
-  font-style: normal;
-  box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0px !important;
 }
 
 .box-content .middle-section .google-image {
