@@ -91,6 +91,21 @@ body {
   min-height: var(--min-height);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
 header {
   position: fixed;
   width: 100vw;
@@ -119,24 +134,16 @@ nav {
   transition: all 500ms ease;
 }
 
-nav ul li a {
-  text-decoration: none;
+.btn-wrapper {
+  padding: 16.5px;
 }
 
-nav ul {
-  list-style: none;
-}
-
-nav ul li .btn-wrapper {
-  padding: 15px 0;
-}
-
-nav ul li .btn {
+.btn {
   color: #0053cc;
   font-size: 1rem;
   display: inline-flex;
   align-items: center;
-  padding: 4px 10px;
+  padding: 0 10px;
   margin-bottom: 0;
   border: 1px solid #0053cc;
   border-radius: 4px;
@@ -144,7 +151,7 @@ nav ul li .btn {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-nav.scrolled ul li .btn {
+nav.scrolled .btn {
   background: #0052cc;
   border: 1px solid #0052cc;
   color: #fff;
@@ -368,21 +375,6 @@ section .TwoColumns .last {
   font-style: normal;
   background-color: rgb(232, 233, 238);
   box-shadow: rgb(0 0 0 / 20%) 1px 1px 5px 0px !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
 }
 
 .check {
