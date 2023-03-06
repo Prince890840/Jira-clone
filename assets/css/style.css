@@ -254,6 +254,7 @@ section .TwoColumns .last {
   padding: 16px 0 0;
   margin: 0 0 24px;
   font-family: "CharlieDisplay-Black";
+  letter-spacing: 1px;
 }
 
 .hero-section .TwoColumns .last {
@@ -347,7 +348,8 @@ section .TwoColumns .last {
 }
 
 .box-content .middle-section span {
-  color: #091e42;
+  color: #42526e;
+  font-family: "Charlie_Text-Semibold";
 }
 
 .box-content .middle-section .or-division {
@@ -572,7 +574,7 @@ img {
   line-height: 1.33333333;
   margin-bottom: 16px;
   font-family: "Charlie_Display-Semibold";
-  color: #091e42;
+  color: #253858;
 }
 
 .next-gen-board .first p {
@@ -580,7 +582,7 @@ img {
   text-align: left;
   font-family: "Charlie_Text-Thin";
   font-weight: 600;
-  color: #42526e;
+  color: #091e42;
   line-height: 24px;
 }
 
@@ -618,7 +620,7 @@ img {
   line-height: 1.33333333;
   margin-bottom: 16px;
   font-family: "Charlie_Display-Semibold";
-  color: #091e42;
+  color: #253858;
 }
 
 .track-section .first p {
@@ -627,7 +629,7 @@ img {
   font-family: "Charlie_Text-Thin";
   font-weight: 600;
   line-height: 24px;
-  color: #42526e;
+  color: #091e42;
 }
 
 .track-section .TwoColumns .column {
@@ -657,7 +659,7 @@ img {
   line-height: 1.33333333;
   margin-bottom: 16px;
   font-family: "Charlie_Display-Semibold";
-  color: #091e42;
+  color: #253858;
 }
 
 .spreadsheets-section .first p {
@@ -666,7 +668,7 @@ img {
   font-family: "Charlie_Text-Thin";
   font-weight: 600;
   line-height: 24px;
-  color: #42526e;
+  color: #091e42;
 }
 
 .spreadsheets-section .TwoColumns .column {
@@ -767,7 +769,7 @@ a {
 footer {
   background-color: #f4f5f7;
   color: #42525e;
-  padding: 16px 0;
+  padding: 16px 0 0 0;
   /* padding: calc(1rem * 2) calc(16px * 2); */
 }
 
@@ -910,6 +912,7 @@ footer .footer__col ul li:last-child {
 
 footer .footer__col ul li:last-child a {
   color: #0052cc;
+  font-size: 14px;
 }
 
 footer .footer__bottom .image-section {
@@ -917,6 +920,8 @@ footer .footer__bottom .image-section {
   flex-wrap: wrap;
   justify-content: flex-end;
   cursor: pointer;
+  gap: 5px;
+  margin: 0 0 0 10px;
 }
 
 footer .footer-head-section-logo {
