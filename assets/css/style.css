@@ -477,6 +477,8 @@ span {
   color: #42526e;
   font-family: "Charlie_Display-Regular";
   font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 1.4;
 }
 
 .features .column {
@@ -490,13 +492,13 @@ img {
 }
 
 .component-image {
-  max-width: 685px;
-  max-height: 450px;
+  max-width: 688px;
+  max-height: 453px;
   margin: 0 auto;
 }
 
 .features .component-image img {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .fugro-section {
@@ -580,8 +582,8 @@ img {
 .next-gen-board .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Thin";
-  font-weight: 600;
+  font-family: "Charlie_Text-Regular";
+  font-weight: 500;
   color: #091e42;
   line-height: 24px;
 }
@@ -626,8 +628,8 @@ img {
 .track-section .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Thin";
-  font-weight: 600;
+  font-family: "Charlie_Text-Regular";
+  font-weight: 500;
   line-height: 24px;
   color: #091e42;
 }
@@ -665,8 +667,8 @@ img {
 .spreadsheets-section .first p {
   font-size: 1rem;
   text-align: left;
-  font-family: "Charlie_Text-Thin";
-  font-weight: 600;
+  font-family: "Charlie_Text-Regular";
+  font-weight: 500;
   line-height: 24px;
   color: #091e42;
 }
@@ -774,7 +776,7 @@ footer {
 }
 
 footer .container {
-  max-width: 1400px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -853,7 +855,7 @@ footer .footer__bottom {
 }
 
 footer .footer__bottom .inner-section {
-  padding: 16px;
+  padding: 13px 16px 12px 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
